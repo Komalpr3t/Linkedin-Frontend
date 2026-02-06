@@ -8,7 +8,7 @@ const Feed = () => {
 
   const getAllPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/api/get-posts");
+      const response = await axios.get("https://linkedin-backend-five.vercel.app/api/get-posts");
       setPosts(response.data.posts);
     } catch (err) {
       console.log("err", err);

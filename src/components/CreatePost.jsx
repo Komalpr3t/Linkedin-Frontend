@@ -22,7 +22,7 @@ const CreatePost = () => {
             if(content === ""){
                 return alert("Post cannot be empty!")
             }
-            const response = await axios.post("http://localhost:4000/api/create-post",
+            const response = await axios.post("https://linkedin-backend-five.vercel.app/api/create-post",
                 //body
                 {
                 content,
